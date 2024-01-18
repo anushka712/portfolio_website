@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right:330px;
+    background-color: rgb(51, 48, 48);
+    padding: 6px 4px 12px 4px;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    padding: 6px;
+    font-size: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 22px 32px 22px 24px;
+}
+a:link{
+    color: white;
+}
+a:visited{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+nav{
+    width: 100%;
+    min-height: 100vw;
+    position: sticky;
+    overflow: scroll;
+}
+
