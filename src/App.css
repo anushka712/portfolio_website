@@ -1,23 +1,7 @@
-.image{
-    height:200px;
-    width:200px;
-}
 
-.lyang{
-   padding-top :222px
-}
 
-.port{
-    padding-top :402px
- }
-
- .ex{
-    padding-top :902px
- }
- .ct{
-    padding-top :1200px
- }
 
 *{
   background-color: black;
+   color:white;
  }
