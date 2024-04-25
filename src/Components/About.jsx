@@ -121,7 +121,7 @@ As a believer in seamless and accessible experiences, I'm constantly learning an
 <div className="pt-20">
 
 {/* present college */}
-  <div className="flex gap-16 pb-4">
+  <div className="flex flex-col lg:flex-row gap-2 pb-6  lg:gap-16">
   <p>Education</p>
   <p className="text-gray-400">Bachelor of Science in Computer Science and Information Technology (B.Sc.CSIT)
   Bachelor
@@ -129,12 +129,12 @@ As a believer in seamless and accessible experiences, I'm constantly learning an
 Madan Bhandari Memorial College
 <br />
 Anamnagar, Kathmandu</p>
-<p className="text-gray-400">April 2018 - Present</p>
+<p className="text-gray-400 pt-1">April 2018 - Present</p>
 </div>
 
 
 {/* 12 college */}
-<div className="pl-36 flex gap-48">
+<div className=" gap-2 lg:pl-36 flex  flex-col lg:gap-48 lg:flex-row">
 <p className="text-gray-400">School Leaving Certificate (SLC)
 Science +2
 <br />
@@ -142,12 +142,12 @@ Golden Gate International College
 <br />
 Battisputali, Kathmandu
 </p>
-<p className="text-gray-400">April 2019 - April 2021</p>
+<p className="text-gray-400 pb-6">April 2019 - April 2021</p>
 </div>
 
 
-<div className="pl-36 flex  pt-8">
-<p className="text-gray-400">
+<div className=" gap-2 lg:pl-36 flex  flex-col lg:gap-20 lg:flex-row ">
+<p className="text-gray-400 pt-6">
 Secondary Education Examination (SEE)
 Primary Education
 <br />
@@ -155,7 +155,7 @@ Adarsha English  Boarding  School
 <br />
 Galyang, Syangja
 </p>
-<p className="pl-20 text-gray-400">March 2015 - April 2018</p>
+<p className="text-gray-400">March 2015 - April 2018</p>
 </div>
 
 

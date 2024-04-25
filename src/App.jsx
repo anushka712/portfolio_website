@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 import About from './Components/About'
 import Portfolio from './Components/Portfolio'
 
-import Experience from './Components/Experience'
+import Project from './Components/Project'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import ReHome from './Components/ReHome'
@@ -21,8 +21,8 @@ function App() {
         <Route path='/home'  element={<ReHome/>}/>
         <Route path='/about'  element={<About/>}/>
         <Route path='/contact'  element={<Contact/>}/>
-        <Route path='/experience'  element={<Experience/>}/>
-        <Route path='/portfolio'  element={<Portfolio/>}/>
+        {/* <Route path='/experience'  element={<Experience/>}/> */}
+        <Route path='/project'  element={<Project/>}/>
       </Routes>
       <Footer/>
      </Router>
