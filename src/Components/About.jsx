@@ -1,9 +1,168 @@
 import React from "react";
+import html from '../assets/html.png';
+import css from '../assets/css.png';
+import tailwind from '../assets/tailwind.png';
+import js from '../assets/js.png';
+import typescript from '../assets/typescript.png';
+import react from '../assets/react.png';
+import vscode from '../assets/vscode.png';
+import github from '../assets/github.png';
+import git from '../assets/git.png';
+
+
 
 const About = () => {
+  const photos = [
+    {
+      id: 1,
+     image:html,
+     tagName:"HTML",
+    },
+    {
+      id: 2,
+      image:typescript,
+      tagName:"TypeScript",
+    },
+    {
+      id: 3,
+      image:css,
+      tagName:"CSS",
+    },
+    {
+      id: 4,
+     image:tailwind,
+     tagName:"tailwindCss",
+    },
+    {
+      id: 5,
+      image:react,
+      tagName:"React",
+    },
+   
+    {
+      id: 6,
+      image:js,
+      tagName:"JavaScript",
+    },
+  ];
+
+
+  const tools =[
+    {
+      id: 1,
+     image:vscode,
+     tagName:"VsCode",
+    },
+    {
+      id: 2,
+      image:github,
+      tagName:"GitHub",
+    },
+    {
+      id: 3,
+      image:git,
+      tagName:"Git",
+    },
+  ];
+
+
   return (
     <>
-    <h1>Hello  "https://getform.io/f/61c99527-2b15-42cf-9b55-ad37d2f7daa6"</h1></>
+
+    <div className="lg:pl-52 lg:pr-44 py-12 p-4">
+
+      <p className="font-bold text-2xl">About</p>
+      <p>Just a quick glimpse.</p>
+<br />
+      <div className="md:flex flex-row gap-16 ">
+        <p className="font-bold py-3">About </p>
+        
+        <p className="text-gray-400">Hello there, <br />
+      My name is Anushka  Aryal, and I'm a CSIT student with a burning passion for tech. My journey with code began at 18, and I've been fascinated by its ability to bring ideas to life ever since.
+<br />
+<br />
+As a believer in seamless and accessible experiences, I'm constantly learning and experimenting. While professional projects haven't come my way yet, I'm actively seeking opportunities to collaborate and apply my skills. So, if you have a cool project in mind or share my tech passion, let's connect and create something amazing!</p>
+      </div>
+
+
+      <div className="flex flex-col md:flex-row gap-16 py-12">
+<p className="font-bold">Skills</p>
+<div className="grid grid-cols-2 md:grid-cols-3">
+{photos.map((photo) => (
+  <div key={photo.id} className="flex flex-col items-center">
+    <p className="text-gray-400">{photo.tagName}</p>
+    <img 
+      src={photo.image} 
+      alt={`Image ${photo.id}`} 
+      className="w-16 h-34 p-2"
+    />
+  </div>
+))}
+</div>
+</div>
+
+
+<div className="flex flex-col md:flex-row gap-16 md:gap-3">
+  <p className="font-bold">Tools & <br /> Environments</p>
+<div className="flex gap-4 pl-2">
+{tools.map((photo) => (
+  <div key={photo.id} className="flex flex-col items-center">
+    <p className="text-gray-400">{photo.tagName}</p>
+    <img 
+      src={photo.image} 
+      alt={`Image ${photo.id}`} 
+      className="w-16 h-34 p-2"
+    />
+  </div>
+))}
+</div>
+</div>
+
+<div className="pt-20">
+
+{/* present college */}
+  <div className="flex gap-16 pb-4">
+  <p>Education</p>
+  <p className="text-gray-400">Bachelor of Science in Computer Science and Information Technology (B.Sc.CSIT)
+  Bachelor
+<br />
+Madan Bhandari Memorial College
+<br />
+Anamnagar, Kathmandu</p>
+<p className="text-gray-400">April 2018 - Present</p>
+</div>
+
+
+{/* 12 college */}
+<div className="pl-36 flex gap-48">
+<p className="text-gray-400">School Leaving Certificate (SLC)
+Science +2
+<br />
+Golden Gate International College
+<br />
+Battisputali, Kathmandu
+</p>
+<p className="text-gray-400">April 2019 - April 2021</p>
+</div>
+
+
+<div className="pl-36 flex  pt-8">
+<p className="text-gray-400">
+Secondary Education Examination (SEE)
+Primary Education
+<br />
+Adarsha English  Boarding  School
+<br />
+Galyang, Syangja
+</p>
+<p className="pl-20 text-gray-400">March 2015 - April 2018</p>
+</div>
+
+
+</div>
+
+    </div>
+    </>
   );
 };
 
