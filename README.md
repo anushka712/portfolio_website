@@ -1,8 +1,20 @@
-# React + Vite
+# Personal portfolio website
+   Built using HTML, Tailwind CSS, JavaScript, and React, this site showcases my projects, skills, and experiences in a clean and modern interface. Explore my work, learn more about me, and feel free to reach out for collaboration or inquiries. Thank you for visiting! 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# How to access
+    Simply you can visit this site
+    https://aryalanushka.vercel.app/
 
-Currently, two official plugins are available:
+# Installation
+   To install the project, follow these steps:
+    1.Clone the repository:
+     https://github.com/anushka712/portfolio_website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    2.Install dependencies:
+    npm install
+
+    3.Start the server:
+    npm run dev
+
+
+
