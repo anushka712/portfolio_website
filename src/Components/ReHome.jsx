@@ -30,7 +30,7 @@ const ReHome = () => {
           </div>
    </div>
 
-   <div className='flex pl-6 pb-16  lg:pl-52 pt-12 lg:pt-0'>
+   <div className='flex pl-12 pb-16  lg:pl-52 pt-12 lg:pt-0'>
           
       <a href="https://www.linkedin.com/in/anushka-aryal-27916722a/" target='_blank' className='hover:scale-105  duration-200'><FiLinkedin size={30} /></a>
 

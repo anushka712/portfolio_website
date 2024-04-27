@@ -6,9 +6,9 @@
     https://aryalanushka.vercel.app/
 
 # Installation
-   To install the project, follow these steps:
-    1.Clone the repository:
-     https://github.com/anushka712/portfolio_website
+To install the project, follow these steps:
+       1.Clone the repository:
+       https://github.com/anushka712/portfolio_website
 
     2.Install dependencies:
     npm install

@@ -75,7 +75,7 @@ const About = () => {
       <p>Just a quick glimpse.</p>
 <br />
       <div className="md:flex flex-row gap-16 ">
-        <p className="font-bold py-3">About </p>
+        <p className="font-bold py-3 hidden md:block ">About </p>
         
         <p className="text-gray-400">Hello there, <br />
       My name is Anushka  Aryal, and I'm a CSIT student with a burning passion for tech. My journey with code began at 18, and I've been fascinated by its ability to bring ideas to life ever since.

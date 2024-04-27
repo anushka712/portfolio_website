@@ -4,7 +4,7 @@ const Contact = () => {
   return (
    <>
    <div className="flex flex-col justify-center items-center pt-24 pb-24">
-   <h2 className="py-4 text-2xl text-gray-400">Let's connect...</h2>
+   <h2 className="py-4 text-2xl text-gray-400 font-bold">Let's connect...</h2>
    <div className="border border-gray-900 p-8">
     <form action="https://formspree.io/f/xjvnerer" method="POST">
       <label htmlFor="name">Name</label>
