@@ -12,16 +12,15 @@
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
-```sh
 git clone https://github.com/anushka712/portfolio_website
 
-2.Navigate the project directory:
+2. Navigate the project directory:
 cd portfolio_website
 
-3.Install dependencies:
+3. Install dependencies:
 npm install
 
-4.Start the server:
+4. Start the server:
 npm run dev
 
 ![portfolio](portfolio.png)
