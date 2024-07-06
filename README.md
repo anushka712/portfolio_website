@@ -11,17 +11,14 @@
 
 To run this project locally, follow these steps:
 
-1. **Clone the repository:**
-git clone https://github.com/anushka712/portfolio_website
+**Steps:**
+1. Clone the repository: `git clone https://github.com/anushka712/portfolio_website` 
 
-2. Navigate the project directory:
-cd portfolio_website
+2. Navigate the project directory:`cd portfolio_website`
 
-3. Install dependencies:
-npm install
+3. Install dependencies:`npm install`
 
-4. Start the server:
-npm run dev
+4. Start the server:`npm run dev`
 
 ![portfolio](portfolio.png)
 
