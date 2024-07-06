@@ -78,10 +78,10 @@ const About = () => {
         <p className="font-bold py-3 hidden md:block ">About </p>
         
         <p className="text-gray-400">Hello there, <br />
-      My name is Anushka  Aryal, and I'm a CSIT student with a burning passion for tech. My journey with code began at 18, and I've been fascinated by its ability to bring ideas to life ever since.
+      My name is Anushka  Aryal, and I'm a CSIT student with a burning passion for tech.
 <br />
 <br />
-As a believer in seamless and accessible experiences, I'm constantly learning and experimenting. While professional projects haven't come my way yet, I'm actively seeking opportunities to collaborate and apply my skills. So, if you have a cool project in mind or share my tech passion, let's connect and create something amazing!</p>
+As a believer in seamless and accessible experiences, I'm constantly learning and experimenting. While professional projects haven't come my way yet, I'm actively seeking opportunities to collaborate and apply my skills.</p>
       </div>
 
 

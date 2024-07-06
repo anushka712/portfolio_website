@@ -16,8 +16,8 @@ const ReHome = () => {
         <p className='text-3xl font-bold pb-4'><span className='text-yellow-400'>Frontend</span>
         <span className='text-blue-400'> Developer</span> </p>
 
-        <div className='text-gray-400 pt-3 w-10/12'>I'm a frontend developer with a knack for transforming designs into intuitive and engaging user experiences. With a solid foundation in HTML, CSS, and JavaScript. 
-       <p className='text-gray-400 pt-3'> Whether it's responsive layouts, interactive features, or performance optimization, I thrive on the challenge of creating polished web solutions that captivate audiences
+        <div className='text-gray-400 pt-3 w-10/12'>I'm a frontend developer who turns designs into user-friendly and engaging websites.
+       <p className='text-gray-400 pt-3'>  I have strong skills in HTML, CSS, and JavaScript. I enjoy creating responsive layouts, adding interactive features, and improving performance to make polished web solutions that capture users' attention.
         </p>
         </div>
     </div>
