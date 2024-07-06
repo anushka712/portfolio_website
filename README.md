@@ -1,6 +1,6 @@
 # Personal portfolio website
    
-   welcome to my personal portfolio website! Built using HTML, Tailwind CSS, JavaScript, and React, this site showcases my projects, skills, and experiences in a clean and modern interface. Explore my work, learn more about me, and feel free to reach out for collaboration or inquiries. Thank you for visiting! 
+   Welcome to my personal portfolio website! Built using HTML, Tailwind CSS, JavaScript, and React, this site showcases my projects, skills, and experiences in a clean and modern interface. Explore my work, learn more about me, and feel free to reach out for collaboration or inquiries. Thank you for visiting! 
 
 ## How to access
 
