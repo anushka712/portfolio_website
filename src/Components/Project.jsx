@@ -15,7 +15,7 @@ const Project = () => {
      
      <div className="flex flex-col lg:flex-row gap-12 py-8 my-8 border border-gray-800 hover:scale-105 duration-200">
     <div>
-    <NavLink to='https://ecommerce-website-anushka.vercel.app/'>
+    <NavLink to='https://ecommerce-website-ecom.vercel.app/'>
       <img src={ecom} alt="project-html"
       className="pl-2 w-64"
       />
@@ -23,7 +23,7 @@ const Project = () => {
     </div>
 
     <div>
-      <NavLink to='https://ecommerce-website-anushka.vercel.app/'>
+      <NavLink to='https://ecommerce-website-ecom.vercel.app/'>
       <p className="pb-4 font-bold">Ecommerce Website using html,css, js and react.</p>
       <p className="text-gray-400">Discover endless possibilities at . Shop fashion, gadgets, and more with confidence. Your one-stop shop for convenience and quality. Start shopping now!
 </p>
