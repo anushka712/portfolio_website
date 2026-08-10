@@ -87,8 +87,8 @@ const Contact = () => {
           {/* left: context + direct links */}
           <div>
             <p className="text-[#96A3B8] leading-relaxed max-w-sm">
-              Have a role, a project, or just want to say hi? Send a message and
-              I'll get back to you — or reach me directly below.
+              Send a message and I'll get back to you — or reach me directly
+              below.
             </p>
 
             <div className="mt-8 flex items-center gap-2 text-sm text-[#8FA0BD]">
@@ -117,13 +117,10 @@ const Contact = () => {
           {/* right: form */}
           <form
             onSubmit={handleSubmit}
-            className="rounded-2xl border border-[#1E293B] bg-[#121B2E] p-6 sm:p-8"
+            className="rounded-2xl border border-[#1E293B] p-6 sm:p-8"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
-                <label htmlFor="name" className="text-sm text-[#B8C2D6]">
-                  Name
-                </label>
                 <input
                   id="name"
                   type="text"
@@ -137,9 +134,6 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="text-sm text-[#B8C2D6]">
-                  Email
-                </label>
                 <input
                   id="email"
                   type="email"
@@ -153,12 +147,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <label
-              htmlFor="message"
-              className="text-sm text-[#B8C2D6] block mt-5"
-            >
-              Message
-            </label>
             <textarea
               id="message"
               name="message"

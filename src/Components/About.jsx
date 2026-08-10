@@ -1,11 +1,5 @@
-import React from "react";
 import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiTypescript,
   SiReact,
-  SiTailwindcss,
   SiNodedotjs,
   SiExpress,
   SiMongodb,
@@ -13,6 +7,9 @@ import {
   SiVisualstudiocode,
   SiGithub,
   SiGit,
+  SiMantine,
+  SiRedis,
+  SiReactquery,
 } from "react-icons/si";
 
 const skills = [
@@ -21,11 +18,9 @@ const skills = [
   { icon: SiExpress, label: "Express.js" },
   { icon: SiMongodb, label: "MongoDB" },
   { icon: SiSocketdotio, label: "Socket.io" },
-  { icon: SiJavascript, label: "JavaScript" },
-  { icon: SiTypescript, label: "TypeScript" },
-  { icon: SiTailwindcss, label: "Tailwind CSS" },
-  { icon: SiHtml5, label: "HTML5" },
-  { icon: SiCss3, label: "CSS3" },
+  { icon: SiMantine, label: "Mantine UI" },
+  { icon: SiRedis, label: "Redis" },
+  { icon: SiReactquery, label: "TanStack Query" },
 ];
 
 const tools = [
@@ -64,13 +59,8 @@ const About = () => {
           <p className="text-[#96A3B8] leading-relaxed max-w-2xl">
             Hey, I'm Anushka — a full-stack MERN developer based in Kathmandu. I
             graduated with a BSc in Computer Science and Information Technology,
-            and I currently work as a Full Stack Developer at Nepal Can Code,
-            where I build real-time, production web systems from the database up
-            to the interface.
-            <br />
-            <br />I like the parts of engineering most people skip past — order
-            tracking logic, real-time sync, queue-based background jobs — and I
-            try to ship things that hold up outside a demo.
+            and I currently work as a Full Stack Developer, where I build
+            real-time, production web systems.
           </p>
         </div>
 
@@ -109,7 +99,7 @@ const About = () => {
         {/* education */}
         <div className="mt-14 grid sm:grid-cols-[140px_1fr] gap-4 sm:gap-10">
           <p className="font-semibold">Education</p>
-          <div className="rounded-xl border border-[#1E293B] bg-[#121B2E] p-5">
+          <div className="rounded-xl border border-[#1E293B] p-5">
             <p className="font-medium">
               BSc Computer Science and Information Technology (BSc CSIT)
             </p>

@@ -1,4 +1,3 @@
-import React from "react";
 import self from "../assets/self.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiLinkedin, FiArrowRight, FiDownload } from "react-icons/fi";
@@ -9,18 +8,10 @@ import {
   SiExpress,
   SiMongodb,
   SiSocketdotio,
-  SiTailwindcss,
+  SiMantine,
+  SiRedis,
+  SiReactquery,
 } from "react-icons/si";
-
-/**
- * Fonts used below: 'Space Grotesk' (display), 'JetBrains Mono' (labels/status),
- * 'Inter' (body). Add this once to index.html <head> if not already present:
- *
- * <link rel="preconnect" href="https://fonts.googleapis.com">
- * <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
- *
- * If skipped, everything falls back gracefully to system fonts.
- */
 
 const stack = [
   { icon: SiReact, label: "React.js" },
@@ -28,7 +19,9 @@ const stack = [
   { icon: SiExpress, label: "Express.js" },
   { icon: SiMongodb, label: "MongoDB" },
   { icon: SiSocketdotio, label: "Socket.io" },
-  { icon: SiTailwindcss, label: "Tailwind CSS" },
+  { icon: SiMantine, label: "Mantine UI" },
+  { icon: SiRedis, label: "Redis" },
+  { icon: SiReactquery, label: "TanStack Query" },
 ];
 
 const scrollToSection = (id) => {
@@ -45,18 +38,6 @@ const ReHome = () => {
       {/* HERO */}
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10 lg:gap-6 max-w-6xl mx-auto px-6 lg:px-12 pt-14 lg:pt-28 pb-16 lg:pb-24 min-h-[calc(100vh-4rem)] lg:min-h-0">
         <div className="w-full lg:w-1/2">
-          {/* status eyebrow — reads like her own apps' presence indicator */}
-          <div
-            className="inline-flex items-center gap-2 rounded-full border border-[#1E293B] bg-[#121B2E] px-3 py-1.5 text-xs tracking-wide text-[#8FE3D3]"
-            style={{ fontFamily: "'JetBrains Mono', monospace" }}
-          >
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4FD8C4] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#4FD8C4]"></span>
-            </span>
-            status: open to full-stack roles
-          </div>
-
           <h1
             className="mt-6 text-4xl sm:text-5xl font-bold leading-tight"
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
@@ -73,10 +54,10 @@ const ReHome = () => {
           </p>
 
           <p className="mt-5 text-[#96A3B8] leading-relaxed max-w-md">
-            I build real-time, production-grade web systems end to end — from
-            React interfaces down to the Node APIs and databases behind them.
-            Currently shipping chat and logistics platforms at{" "}
-            <span className="text-[#F3F5F8]">Nepal Can Code</span>.
+            I’m a Full Stack Developer who builds web applications and real-time
+            systems. My experience includes developing chat platforms, logistics
+            workflows, notification systems, automated processes, and
+            user-focused applications designed for real-world use.
           </p>
 
           {/* tech chips */}
@@ -100,12 +81,6 @@ const ReHome = () => {
             >
               View my work <FiArrowRight />
             </button>
-            <a
-              href="/resume.pdf"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#1E293B] px-5 py-2.5 text-sm font-semibold text-[#F3F5F8] hover:border-[#4FD8C4] transition-colors"
-            >
-              Resume <FiDownload />
-            </a>
           </div>
 
           {/* social row */}
@@ -152,13 +127,13 @@ const ReHome = () => {
                 style={{ fontFamily: "'JetBrains Mono', monospace" }}
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-[#4FD8C4]" />
-                LIVE PRODUCT
+                CAN CHAT
               </div>
               <p className="mt-1 text-sm font-medium text-[#F3F5F8]">
-                CAN Logistics
+                CAN Chat
               </p>
               <p className="text-xs text-[#8FA0BD]">
-                Order tracking, live in production
+                Real-time chat, reactions & notifications
               </p>
             </div>
           </div>
