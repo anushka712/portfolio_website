@@ -1,33 +1,47 @@
-import './App.css'
-import Navbar from './Components/Navbar'
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import ReHome from "./Components/ReHome";
+import About from "./Components/About";
+import Project from "./Components/Project";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
-import About from './Components/About'
-import Portfolio from './Components/Portfolio'
-
-import Project from './Components/Project'
-import Contact from './Components/Contact'
-import Footer from './Components/Footer'
-import ReHome from './Components/ReHome'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
-function App() {
- 
+// Everything now lives on one scrollable page — Home, About, Project and
+// Contact are stacked sections with matching ids, and the navbar scrolls
+// to each one instead of routing to a separate page.
+function HomePage() {
   return (
-  
-<Router>
-       <Navbar/>
-      <Routes>
-      <Route path='/'  element={<ReHome/>}/>
-        <Route path='/home'  element={<ReHome/>}/>
-        <Route path='/about'  element={<About/>}/>
-        <Route path='/contact'  element={<Contact/>}/>
-        {/* <Route path='/experience'  element={<Experience/>}/> */}
-        <Route path='/project'  element={<Project/>}/>
-      </Routes>
-      <Footer/>
-     </Router>
-  )
+    <>
+      <ReHome />
+      <About />
+      <Project />
+      <Contact />
+    </>
+  );
 }
 
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* old bookmarked links still land on the right section */}
+        <Route path="/home" element={<Navigate to="/#home" replace />} />
+        <Route path="/about" element={<Navigate to="/#about" replace />} />
+        <Route path="/project" element={<Navigate to="/#project" replace />} />
+        <Route path="/contact" element={<Navigate to="/#contact" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+      <Footer />
+    </Router>
+  );
+}
 
-export default App
+export default App;

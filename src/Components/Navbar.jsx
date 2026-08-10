@@ -1,82 +1,97 @@
-import React from 'react'
-import {FaBars, FaTimes} from "react-icons/fa"
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 
+const links = [
+  { id: "home", label: "home" },
+  { id: "about", label: "about" },
+  { id: "project", label: "project" },
+  { id: "contact", label: "contact" },
+];
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
-  
-    const links = [
-      {
-        id: 1,
-        link: "home",
+  const [nav, setNav] = useState(false);
+  const [active, setActive] = useState("home");
+
+  // highlight the nav item for whichever section is currently in view
+  useEffect(() => {
+    const sections = links
+      .map(({ id }) => document.getElementById(id))
+      .filter(Boolean);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
       },
-      {
-        id: 2,
-        link: "about",
-      },
-      {
-        id: 3,
-        link: "project",
-      },
-      // {
-      //   id: 4,
-      //   link: "experience",
-      // },
-      {
-        id: 5,
-        link: "contact",
-      },
-    ];
-  
-    return (
-      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black sticky top-0 lg:pl-52 lg:pr-44 pt-4">
-        <div>
-          <NavLink to='/'> <h1 className="text-5xl font-signature ml-2 text-gray-400">Anushka</h1></NavLink>
-          
-        </div>
-  
-        <ul className="hidden md:flex">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
-            >
-              <NavLink to={link}>
-                {link}
-              </NavLink>
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (id) => {
+    setNav(false);
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <div className="sticky top-0 z-30 bg-[#0B1220]/90 backdrop-blur border-b border-[#1E293B]">
+      <div className="max-w-6xl mx-auto flex justify-between items-center h-16 sm:h-20 px-6 lg:px-12">
+        <button onClick={() => scrollToSection("home")}>
+          <h1
+            className="text-2xl sm:text-3xl font-bold text-[#F3F5F8]"
+            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+          >
+            Anushka<span className="text-[#4FD8C4]">.</span>
+          </h1>
+        </button>
+
+        <ul className="hidden md:flex items-center">
+          {links.map(({ id, label }) => (
+            <li key={id}>
+              <button
+                onClick={() => scrollToSection(id)}
+                className={`px-4 py-1.5 rounded-md capitalize text-sm font-medium transition-colors ${
+                  active === id
+                    ? "text-[#0B1220] bg-[#4FD8C4]"
+                    : "text-[#8FA0BD] hover:text-[#F3F5F8]"
+                }`}
+              >
+                {label}
+              </button>
             </li>
           ))}
         </ul>
-  
-        <div
+
+        <button
           onClick={() => setNav(!nav)}
-          className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+          aria-label={nav ? "Close menu" : "Open menu"}
+          className="md:hidden z-40 text-[#F3F5F8]"
         >
-          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-        </div>
-  
+          {nav ? <FiX size={26} /> : <FiMenu size={26} />}
+        </button>
+
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-            {links.map(({ id, link }) => (
-              <li
-                key={id}
-                className="px-4 cursor-pointer capitalize py-6 text-4xl"
-              >
-                <NavLink
-                  onClick={() => setNav(!nav)}
-                  to={link}
+          <ul className="flex flex-col justify-center items-center fixed inset-0 w-full h-screen bg-[#0B1220]">
+            {links.map(({ id, label }) => (
+              <li key={id}>
+                <button
+                  onClick={() => scrollToSection(id)}
+                  className={`text-3xl capitalize py-4 transition-colors ${
+                    active === id ? "text-[#4FD8C4]" : "text-[#F3F5F8]"
+                  }`}
                 >
-                  {link}
-                </NavLink>
+                  {label}
+                </button>
               </li>
             ))}
           </ul>
         )}
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-export default Navbar
-
+export default Navbar;
