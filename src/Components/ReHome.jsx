@@ -1,6 +1,6 @@
 import self from "../assets/self.png";
 import { AiOutlineMail } from "react-icons/ai";
-import { FiLinkedin, FiArrowRight, FiDownload } from "react-icons/fi";
+import { FiLinkedin, FiArrowRight } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
 import {
   SiReact,
@@ -33,22 +33,14 @@ const ReHome = () => {
     <div
       id="home"
       className="bg-[#0B1220] text-[#F3F5F8] scroll-mt-16 sm:scroll-mt-20"
-      style={{ fontFamily: "'Inter', ui-sans-serif, system-ui, sans-serif" }}
     >
-      {/* HERO */}
       <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10 lg:gap-6 max-w-6xl mx-auto px-6 lg:px-12 pt-14 lg:pt-28 pb-16 lg:pb-24 min-h-[calc(100vh-4rem)] lg:min-h-0">
         <div className="w-full lg:w-1/2">
-          <h1
-            className="mt-6 text-4xl sm:text-5xl font-bold leading-tight"
-            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-          >
+          <h1 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight">
             Anushka Aryal
           </h1>
 
-          <p
-            className="mt-2 text-2xl sm:text-3xl font-semibold"
-            style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-          >
+          <p className="mt-2 text-2xl sm:text-3xl font-semibold">
             <span className="text-[#4FD8C4]">Full-Stack</span>{" "}
             <span className="text-[#A78BFA]">MERN Developer</span>
           </p>
@@ -60,9 +52,8 @@ const ReHome = () => {
             user-focused applications designed for real-world use.
           </p>
 
-          {/* tech chips */}
           <div className="mt-6 flex flex-wrap gap-2">
-            {stack.map(({ icon: Icon, label }) => (
+            {stack?.map(({ icon: Icon, label }) => (
               <span
                 key={label}
                 className="inline-flex items-center gap-1.5 rounded-md border border-[#1E293B] bg-[#121B2E] px-2.5 py-1 text-xs text-[#B8C2D6]"
@@ -73,7 +64,6 @@ const ReHome = () => {
             ))}
           </div>
 
-          {/* CTAs */}
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
               onClick={() => scrollToSection("project")}
@@ -83,7 +73,7 @@ const ReHome = () => {
             </button>
           </div>
 
-          {/* social row */}
+          {/* Social Media */}
           <div className="mt-8 flex items-center gap-5 text-[#8FA0BD]">
             <a
               href="https://www.linkedin.com/in/anushka-aryal-27916722a/"
@@ -93,6 +83,7 @@ const ReHome = () => {
             >
               <FiLinkedin size={22} />
             </a>
+
             <a
               href="https://github.com/anushka712"
               target="_blank"
@@ -110,7 +101,7 @@ const ReHome = () => {
           </div>
         </div>
 
-        {/* PHOTO + signature status card */}
+        {/* PHOTO and card section */}
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <div className="relative w-56 sm:w-72 lg:w-full lg:max-w-sm">
             <div className="absolute -inset-3 rounded-3xl bg-gradient-to-br from-[#4FD8C4]/20 to-[#A78BFA]/20 blur-xl" />
@@ -120,13 +111,8 @@ const ReHome = () => {
               className="relative rounded-2xl w-full object-cover border border-[#1E293B]"
             />
 
-            {/* floating "live product" card — echoes her own chat/notification UI work */}
-            <div className="absolute -bottom-5 -left-5 sm:-left-8 bg-[#121B2E] border border-[#1E293B] rounded-xl px-4 py-3 shadow-lg shadow-black/30 max-w-[220px]">
-              <div
-                className="flex items-center gap-1.5 text-[10px] text-[#4FD8C4] tracking-wide"
-                style={{ fontFamily: "'JetBrains Mono', monospace" }}
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-[#4FD8C4]" />
+            <div className="absolute -bottom-5 -left-5 sm:-left-8  border border-[#1E293B] rounded-xl px-4 py-3 max-w-[220px]">
+              <div className="flex items-center gap-1.5 text-[10px] text-[#4FD8C4] tracking-wide">
                 CAN CHAT
               </div>
               <p className="mt-1 text-sm font-medium text-[#F3F5F8]">

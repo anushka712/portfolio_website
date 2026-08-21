@@ -12,9 +12,6 @@ import {
   Navigate,
 } from "react-router-dom";
 
-// Everything now lives on one scrollable page — Home, About, Project and
-// Contact are stacked sections with matching ids, and the navbar scrolls
-// to each one instead of routing to a separate page.
 function HomePage() {
   return (
     <>
@@ -32,7 +29,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* old bookmarked links still land on the right section */}
         <Route path="/home" element={<Navigate to="/#home" replace />} />
         <Route path="/about" element={<Navigate to="/#about" replace />} />
         <Route path="/project" element={<Navigate to="/#project" replace />} />

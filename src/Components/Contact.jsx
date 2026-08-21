@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FiLinkedin, FiMapPin } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
@@ -39,7 +39,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
+  const [status, setStatus] = useState("idle");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -84,7 +84,6 @@ const Contact = () => {
         </h2>
 
         <div className="mt-10 grid lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)] gap-10 lg:gap-16">
-          {/* left: context + direct links */}
           <div>
             <p className="text-[#96A3B8] leading-relaxed max-w-sm">
               Send a message and I'll get back to you — or reach me directly
@@ -114,7 +113,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* right: form */}
+         
           <form
             onSubmit={handleSubmit}
             className="rounded-2xl border border-[#1E293B] p-6 sm:p-8"

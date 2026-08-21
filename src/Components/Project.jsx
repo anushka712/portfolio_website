@@ -1,4 +1,3 @@
-import React from "react";
 import { FiExternalLink } from "react-icons/fi";
 
 import ecom from "../assets/ecom.png";
@@ -7,12 +6,7 @@ import expense from "../assets/expense.png";
 import todo from "../assets/todo.png";
 
 const SectionLabel = ({ children }) => (
-  <p
-    className="text-xs tracking-widest text-[#4FD8C4] uppercase"
-    style={{ fontFamily: "'JetBrains Mono', monospace" }}
-  >
-    {children}
-  </p>
+  <p className="text-xs tracking-widest text-[#4FD8C4] uppercase">{children}</p>
 );
 
 const professionalWork = [

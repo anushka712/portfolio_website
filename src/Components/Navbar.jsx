@@ -12,7 +12,6 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [active, setActive] = useState("home");
 
-  // highlight the nav item for whichever section is currently in view
   useEffect(() => {
     const sections = links
       .map(({ id }) => document.getElementById(id))
@@ -44,7 +43,7 @@ const Navbar = () => {
             className="text-2xl sm:text-3xl font-bold text-[#F3F5F8]"
             style={{ fontFamily: "'Space Grotesk', sans-serif" }}
           >
-            Anushka<span className="text-[#4FD8C4]">.</span>
+            Anushka
           </h1>
         </button>
 
