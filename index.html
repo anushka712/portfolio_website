@@ -5,6 +5,27 @@
     <link rel="icon" type="image/png" href="/self.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anushka Aryal</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MMS6BDYL5C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-MMS6BDYL5C");
+    </script>
+    <script>
+      window.addEventListener("hashchange", function () {
+        gtag("event", "section_view", {
+          section: window.location.hash.replace("#", "") || "home",
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
